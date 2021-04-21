@@ -1,0 +1,7 @@
+**/.vs
+**/bin
+**/obj
+**/.idea
+**/packages
+SoR_BepInEx_Libraries
+Releases
