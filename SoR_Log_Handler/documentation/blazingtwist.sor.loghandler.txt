@@ -1,0 +1,32 @@
+﻿- fileCheckInterval = 30.0
+
+// Logger Config
+// ====================
+- loggerConfig :
+
+-- Assert :
+--- logMessage = true
+--- logStackTrace = false
+
+-- Error :
+--- logMessage = true
+--- logStackTrace = false
+
+-- Exception :
+--- logMessage = true
+--- logStackTrace = true
+
+-- Log :
+--- logMessage = false
+--- logStackTrace = false
+
+-- Warning :
+--- logMessage = true
+--- logStackTrace = false
+
+
+- logMessageFilter :
+-- "-----FILTER-EXAMPLE-----"
+
+// End of Logger Config
+// ====================
