@@ -25,6 +25,11 @@
 --- logStackTrace = false
 
 
+// Allows you to ignore logs that match any of the Regex strings put here
+//  e.g. "useless info" would ignore all logs that contain "useless info"
+// You can negate you Regex by prefixing them with an Exclamation mark '!'
+//  e.g. !"important info" would ignore all logs that DON'T contain "important info"
+//  If your Regex (for some reason) starts with !, you can escape the negation by using '\!' instead.
 - logMessageFilter :
 -- "-----FILTER-EXAMPLE-----"
 
