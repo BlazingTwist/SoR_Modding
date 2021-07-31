@@ -247,6 +247,7 @@
         <Compile Include="log_handler\config\BTLoggerConfig.cs" />
         <Compile Include="log_handler\config\BTLoggerConfigEntry.cs" />
         <Compile Include="log_handler\LoggerConfigManager.cs" />
+        <Compile Include="log_handler\utils\CustomRegex.cs" />
         <Compile Include="SorLogHandler.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>

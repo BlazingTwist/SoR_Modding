@@ -6,6 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using BlazingTwistConfigTools.blazingtwist.config;
 using SoR_Log_Handler.log_handler.config;
+using SoR_Log_Handler.log_handler.utils;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
@@ -67,7 +68,7 @@ namespace SoR_Log_Handler.log_handler {
 			if (!loggerConfigEntry.AnythingToLog()) {
 				return;
 			}
-			if (config != null && config.logMessageFilter.Any(filter => Regex.IsMatch(logString, filter))) {
+			if (config != null && config.logMessageFilter.Any(filter => CustomRegex.IsMatch(logString, filter))) {
 				return;
 			}
 			
