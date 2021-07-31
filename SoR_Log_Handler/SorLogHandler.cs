@@ -1,7 +1,7 @@
 ﻿using BepInEx;
-using SoR_Music_Loader.log_handler;
+using SoR_Log_Handler.log_handler;
 
-namespace SoR_Music_Loader {
+namespace SoR_Log_Handler {
 	[BepInPlugin(pluginGuid, pluginName, pluginVersion)]
 	[BepInProcess("StreetsOfRogue.exe")]
 	public class SorLogHandler : BaseUnityPlugin {

@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using BlazingTwistConfigTools.blazingtwist.config;
-using SoR_Music_Loader.log_handler.config;
+using SoR_Log_Handler.log_handler.config;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
-namespace SoR_Music_Loader.log_handler {
+namespace SoR_Log_Handler.log_handler {
 	public class LoggerConfigManager : MonoBehaviour {
 		private static string configPath;
 		private static string logFilePath;
