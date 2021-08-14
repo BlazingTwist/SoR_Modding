@@ -32,13 +32,13 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="0Harmony, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null">
+        <Reference Include="0Harmony, Version=2.5.4.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\SoR_BepInEx_Libraries\0Harmony.dll</HintPath>
         </Reference>
         <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\SoR_BepInEx_Libraries\Assembly-CSharp.dll</HintPath>
         </Reference>
-        <Reference Include="BepInEx, Version=5.4.9.0, Culture=neutral, PublicKeyToken=null">
+        <Reference Include="BepInEx, Version=5.4.15.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\SoR_BepInEx_Libraries\BepInEx.dll</HintPath>
         </Reference>
         <Reference Include="BepInEx.Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -73,5 +73,10 @@
     <Target Name="AfterBuild">
     </Target>
     -->
+    
+    <Target Name="Install" AfterTargets="Build">
+        <Message Text="Installing..." Importance="normal" />
+        <Exec Command="copy .\bin\Debug\BT_MoreHealth_Mutator.dll ..\Releases\Current\plugins" ConsoleToMSBuild="true" />
+    </Target>
 
 </Project>
