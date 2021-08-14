@@ -3,7 +3,7 @@ using JetBrains.Annotations;
 
 namespace BT_MoreHealth_Mutator {
 	[HarmonyPatch(declaringType: typeof(Agent))]
-	public class AgentPatches {
+	public static class AgentPatches {
 		[UsedImplicitly, HarmonyPrefix, HarmonyPatch(methodName: nameof(Agent.SetEndurance), argumentTypes: new[] { typeof(int), typeof(bool) })]
 		private static void SetEndurance_Prefix(ref int enduranceNum, bool doOnline, Agent __instance) {
 			if (!MoreHealthPlugin.IsMoreHealthMutatorEnabled) {
